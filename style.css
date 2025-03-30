@@ -1,44 +1,80 @@
-/* Reset de márgenes y padding para evitar desajustes */
+/* Reset de estilos para mejor consistencia */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilo para el contenedor del menú */
+/* Fondo general de la página */
+body {
+    background-color: #f4f4f4; /* Un gris claro para dar contraste */
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #005f73; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contenedor del menú */
 nav {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #0077b6; /* Color de fondo azul */
+    background-color: #0077b6; /* Azul brillante */
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para la lista del menú */
+/* Lista del menú */
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
-/* Estilo para los elementos de la lista */
+/* Elementos de la lista */
 nav ul li {
     margin: 0 10px;
 }
 
-/* Estilo para los enlaces del menú */
+/* Estilos para los enlaces */
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
-/* Cambio de color al pasar el cursor */
+/* Efecto hover */
 nav ul li a:hover {
-    color: #ffdd57; /* Amarillo al pasar el cursor */
+    background-color: #005f73; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #005f73;
+    color: white;
+    margin-top: 20px;
 }
