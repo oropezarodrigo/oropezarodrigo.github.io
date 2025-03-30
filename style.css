@@ -1,104 +1,37 @@
-/* Estilo general para la página */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-/* Encabezado */
-header {
-    background-color: #0077b6;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-}
-
-/* Contenedor principal */
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos */
-h1, h2 {
-    color: #0077b6;
-}
-
-/* Párrafos */
-p {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Estilo para los enlaces */
-a {
-    text-decoration: none;
-    color: #0077b6;
-}
-
-a:hover {
-    color: #005f8a;
-}
-
-/* Estilo para el formulario de contacto */
-form {
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Espacio superior */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Estilo para los campos del formulario */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-/* Estilo del botón del formulario */
-form button {
-    background-color: #0077b6;
-    color: white;
+/* Estilo para el contenedor del menú */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #0077b6; /* Color de fondo del menú */
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo del botón al pasar el mouse */
-form button:hover {
-    background-color: #005f8a;
-}
-
-/* Estilo para la lista de enlaces */
-ul {
+/* Estilo para la lista del menú */
+nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-ul li {
-    margin: 10px 0;
+/* Estilo para los elementos de la lista */
+nav ul li {
+    margin: 0 10px;
 }
 
-/* Pie de página */
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: #0077b6;
+/* Estilo para los enlaces del menú */
+nav ul li a {
+    text-decoration: none;
     color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
+
+/* Cambio de color al pasar el cursor */
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
