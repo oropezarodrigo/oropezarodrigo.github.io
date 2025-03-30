@@ -1,37 +1,34 @@
-/* Reset de estilos básicos */
-* {
+/* General Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f4f7fa;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header y navegación */
+/* Header */
 header {
-    background-color: #2c3e50;
+    background-color: #003366;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin: 0;
 }
 
 nav ul {
+    text-align: center;
+    padding: 0;
     list-style: none;
-    padding: 10px 0;
 }
 
 nav ul li {
@@ -41,132 +38,80 @@ nav ul li {
 
 nav ul li a {
     color: white;
+    font-size: 1.2em;
     text-decoration: none;
-    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Sección de Introducción */
-.intro-section {
-    background-color: #ffffff;
+/* Main Section */
+.projects-section {
+    background-color: #fff;
     padding: 40px 0;
+    margin-top: 30px;
+}
+
+.projects-section h2 {
     text-align: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #003366;
 }
 
-.intro-section h2 {
-    font-size: 2em;
-    color: #2c3e50;
-}
-
-.intro-section p {
-    font-size: 1.1em;
-    color: #555;
-    margin-top: 10px;
-}
-
-/* Sección de Contacto */
-.contact-section {
-    background-color: #ffffff;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-section label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.contact-section input,
-.contact-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-section button {
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-section button:hover {
-    background-color: #34495e;
-}
-
-/* Sección de Portafolio */
-.portfolio-section {
-    background-color: #ffffff;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    background-color: #ecf0f1;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
+/* Project Section Styles */
+.project-section {
+    display: inline-block;
     width: 30%;
-    margin: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
     text-align: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
-    color: #2c3e50;
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 15px;
 }
 
 .project-card p {
+    font-size: 1.1em;
     color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background-color: #00509e;
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #003366;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
-    font-size: 0.9em;
-} 
-
-
-/* Estilo para el enlace de LinkedIn */
-.linkedin {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
-.linkedin-link {
-    display: inline-block;
-    background-color: #0077b5; /* Color de LinkedIn */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.linkedin-link:hover {
-    background-color: #005582; /* Color cuando se pasa el cursor */
+footer p {
+    margin: 0;
+    font-size: 1.1em;
 }
