@@ -1,120 +1,152 @@
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset de estilos básicos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header y navegación */
 header {
-    background: #1e88e5; /* Azul principal */
+    background-color: #2c3e50;
     color: white;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
     list-style: none;
-    padding: 0 2rem;
-    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    margin-left: 1.5rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    font-size: 1.1em;
 }
 
 nav ul li a:hover {
-    color: #bbdefb; /* Azul claro */
+    text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e3f2fd; /* Fondo azul claro */
+/* Sección de Introducción */
+.intro-section {
+    background-color: #ffffff;
+    padding: 40px 0;
     text-align: center;
-    padding: 0 1rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0d47a1; /* Azul oscuro */
+.intro-section h2 {
+    font-size: 2em;
+    color: #2c3e50;
 }
 
-.subtitle {
-    font-size: 1.2rem;
+.intro-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section form {
     max-width: 600px;
-    margin: 0 auto 2rem;
-}
-
-.highlight {
-    color: #1e88e5;
-    font-weight: bold;
-}
-
-/* Sección Sobre Mí */
-.about {
-    padding: 5rem 1rem;
-    background: white;
-    text-align: center;
-}
-
-.about-content {
-    max-width: 800px;
     margin: 0 auto;
 }
 
-.skills {
-    margin-top: 2rem;
-    text-align: left;
-    display: inline-block;
+.contact-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.skills ul {
-    list-style: none;
-    padding: 0;
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.skills li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-.skills i {
-    color: #1e88e5;
-    margin-right: 0.5rem;
-}
-
-/* Botones */
-.btn {
-    display: inline-block;
-    background: #1e88e5;
+.contact-section button {
+    background-color: #2c3e50;
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #0d47a1;
     cursor: pointer;
 }
 
-/* Resto de estilos (portafolio, contacto) igual que antes */
+.contact-section button:hover {
+    background-color: #34495e;
+}
+
+/* Sección de Portafolio */
+.portfolio-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #ecf0f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+}
+
+.project-card p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
