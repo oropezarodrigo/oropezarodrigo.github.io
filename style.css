@@ -1,4 +1,4 @@
-/* Reseteo de estilos predeterminados */
+/* Reset de los márgenes y el padding */
 * {
     margin: 0;
     padding: 0;
@@ -8,100 +8,144 @@
 /* Body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Fondo suave y claro */
-    color: #333; /* Texto oscuro */
-    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Contenedor global */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #2d3e50; /* Azul oscuro */
+    background-color: #002F6C; /* Azul oscuro */
     color: #fff;
     padding: 20px 0;
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 header h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 1rem;
 }
 
 nav ul li a:hover {
-    color: #3498db; /* Cambio de color en hover */
+    color: #3498db;
 }
 
-/* Main section */
-main {
-    padding: 50px 20px;
+/* Hero Section */
+.hero {
+    background-color: #3498db; /* Azul brillante */
+    color: #fff;
+    padding: 50px 0;
     text-align: center;
 }
 
-.intro {
-    background-color: #fff;
-    padding: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.intro h2 {
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h3 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.intro p {
+.about p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.projects h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project-card a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.project-card a:hover {
+    background-color: #2980b9;
 }
 
 /* Footer */
 footer {
-    background-color: #2d3e50;
+    background-color: #002F6C;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 15px;
     font-size: 1rem;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    .intro {
-        padding: 20px;
-    }
 }
