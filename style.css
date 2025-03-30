@@ -1,80 +1,33 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-/* Contenedor de portafolio */
-.portfolio {
-    padding: 40px;
-}
-
 .portfolio-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .portfolio-category {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    width: 30%;  /* Ajusta el tamaño de las cajas */
     padding: 20px;
-    width: 30%;
-    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
-.portfolio-category:hover {
-    transform: scale(1.05);
+.portfolio-category h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
-.portfolio-category h2 {
-    color: #003366;
-}
-
-.portfolio-category p {
-    color: #555;
-}
-
-.btn {
+.portfolio-category .btn {
     display: inline-block;
-    background-color: #003366;
-    color: #fff;
     padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #00509e;
+.portfolio-category .btn:hover {
+    background-color: #005bb5;
 }
 
-/* Estilos del pie de página */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
