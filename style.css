@@ -1,80 +1,72 @@
-/* Reset de estilos para mejor consistencia */
-* {
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Fondo general de la página */
-body {
-    background-color: #f4f4f4; /* Un gris claro para dar contraste */
-    color: #333;
-}
-
-/* Estilo del encabezado */
-header {
-    background-color: #005f73; /* Azul oscuro */
-    color: white;
+    background-color: #1e1e1e; /* Fondo oscuro profesional */
+    color: #f4f4f4; /* Texto claro */
     text-align: center;
-    padding: 15px 0;
-    font-size: 24px;
-    font-weight: bold;
 }
 
-/* Contenedor del menú */
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #0077b6; /* Azul brillante */
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+/* Encabezado */
+header {
+    background-color: #292929; /* Un gris más claro para el header */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Lista del menú */
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header h2 {
+    margin: 5px 0 15px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #b0b0b0;
+}
+
+/* Menú de navegación */
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
 }
 
-/* Elementos de la lista */
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-/* Estilos para los enlaces */
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #f4f4f4;
     font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
     padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
     border-radius: 5px;
 }
 
-/* Efecto hover */
-nav ul li a:hover {
-    background-color: #005f73; /* Azul más oscuro al pasar el cursor */
-}
-
-/* Contenedor principal */
+/* Contenido principal */
 .container {
     max-width: 800px;
-    margin: 80px auto;
-    background: white;
+    margin: 60px auto;
     padding: 20px;
+    background-color: #292929; /* Mismo gris del header */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
+/* Pie de página */
 footer {
-    text-align: center;
+    margin-top: 50px;
     padding: 15px;
-    background-color: #005f73;
-    color: white;
-    margin-top: 20px;
+    background-color: #292929;
+    color: #b0b0b0;
+    font-size: 14px;
 }
