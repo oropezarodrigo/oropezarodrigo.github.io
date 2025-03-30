@@ -26,11 +26,7 @@ header {
 }
 
 /* Títulos */
-h1 {
-    color: #0077b6;
-}
-
-h2 {
+h1, h2 {
     color: #0077b6;
 }
 
@@ -49,6 +45,63 @@ a {
 
 a:hover {
     color: #005f8a;
+}
+
+/* Estilo para el formulario de contacto */
+form {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input[type="text"], form input[type="email"] {
+    height: 40px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #005f8a;
+}
+
+/* Estilo de la lista de enlaces */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 /* Pie de página */
