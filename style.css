@@ -1,37 +1,46 @@
-/* Reset de márgenes y padding */
+/* Reseteo de márgenes y padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo del cuerpo */
+/* Fuente y colores base */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-/* Encabezado */
-header {
-    background-color: #003366; /* Azul oscuro */
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+/* Contenedor global */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-/* Estilo de la navegación */
+/* Encabezado */
+header {
+    background-color: #003366;
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
 nav ul {
     list-style-type: none;
-    text-align: center;
-    background-color: #004080; /* Azul intermedio */
-    margin: 0;
-    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -39,46 +48,57 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo de la sección de contacto */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
+/* Sección de Contacto */
+.contact-section {
+    background-color: #ffffff;
+    padding: 3rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
 }
 
-/* Títulos */
-h2 {
+.contact-section h2 {
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #003366;
 }
 
-/* Estilo de los formularios */
+.contact-section p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
+    font-weight: 600;
+    color: #003366;
     margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
+    padding: 1rem;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
@@ -95,24 +115,22 @@ button {
     padding: 1rem;
     background-color: #003366;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #004080;
 }
 
-/* Estilo del pie de página */
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1rem 0;
     background-color: #003366;
+    padding: 1rem 0;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
 }
