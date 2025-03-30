@@ -1,90 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Barra de navegación */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 15px;
+    padding: 10px 0;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header nav ul {
+    list-style: none;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
 /* Sección de presentación */
-.intro-container {
-    padding: 50px;
+.intro {
     text-align: center;
-}
-
-.skills {
+    padding: 40px;
     background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.skills ul {
-    list-style-type: none;
-    padding: 0;
+.intro h1 {
+    font-size: 2em;
 }
 
-.skills li {
-    padding: 8px;
+.intro p {
+    font-size: 1.2em;
 }
 
-/* Portafolio */
-.categories {
-    padding: 50px;
+/* Sección de habilidades */
+.skills {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.skill {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de proyectos */
+.projects {
+    padding: 40px;
+    background-color: #fff;
     text-align: center;
 }
 
-.categories-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.category {
-    background-color: #fff;
-    padding: 20px;
+.project-box {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.category h3 {
-    margin-bottom: 10px;
+.project-box h3 {
+    margin-bottom: 15px;
 }
 
-.btn {
+.project-box .btn {
     background-color: #333;
     color: white;
     padding: 10px 20px;
@@ -92,23 +109,30 @@ footer {
     border-radius: 5px;
 }
 
-.btn:hover {
+.project-box .btn:hover {
     background-color: #555;
 }
 
-.contact-container {
-    text-align: center;
-    padding: 50px;
-}
-
+/* Estilos para el botón de LinkedIn en la página de contacto */
 .contact .btn {
     background-color: #0077b5;
-    padding: 10px 20px;
-    text-decoration: none;
     color: white;
+    padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .contact .btn:hover {
     background-color: #005f87;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
