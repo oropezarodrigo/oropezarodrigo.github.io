@@ -1,3 +1,33 @@
+/* Estilo de la barra de navegación */
+header nav {
+    background-color: #0073e6;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del contenedor de las categorías */
 .portfolio-container {
     display: flex;
     justify-content: space-between;
@@ -29,4 +59,10 @@
 
 .portfolio-category .btn:hover {
     background-color: #005bb5;
+}
+
+/* Estilo de la sección de introducción */
+.intro-container {
+    text-align: center;
+    margin: 40px 0;
 }
