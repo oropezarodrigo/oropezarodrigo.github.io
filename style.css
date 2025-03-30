@@ -1,3 +1,10 @@
+/* Reset de márgenes y padding para evitar desajustes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilo para el contenedor del menú */
 nav {
     position: absolute;
@@ -28,10 +35,10 @@ nav ul li a {
     color: white;
     font-size: 18px;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 /* Cambio de color al pasar el cursor */
 nav ul li a:hover {
     color: #ffdd57; /* Amarillo al pasar el cursor */
 }
-
