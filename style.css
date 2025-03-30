@@ -149,4 +149,24 @@ footer {
     padding: 20px 0;
     text-align: center;
     font-size: 0.9em;
+} 
+
+
+/* Estilo para el enlace de LinkedIn */
+.linkedin {
+    margin-top: 20px;
+}
+
+.linkedin-link {
+    display: inline-block;
+    background-color: #0077b5; /* Color de LinkedIn */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linkedin-link:hover {
+    background-color: #005582; /* Color cuando se pasa el cursor */
 }
