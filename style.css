@@ -3,7 +3,7 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #0077b6; /* Color de fondo del menú */
+    background-color: #0077b6; /* Color de fondo azul */
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -32,6 +32,6 @@ nav ul li a {
 
 /* Cambio de color al pasar el cursor */
 nav ul li a:hover {
-    color: #ffdd57;
+    color: #ffdd57; /* Amarillo al pasar el cursor */
 }
 
