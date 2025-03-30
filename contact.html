@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Rodrigo Oropeza</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portafolio - Rodrigo Oropeza</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
-        <h1>Contacto</h1>
+        <h1>Mi Portafolio</h1>
     </header>
     
-    <section class="contact-container">
-        <div class="contact-form-box">
-            <h2>Envíame un mensaje</h2>
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
+    <div class="portfolio-container">
+        <div class="portfolio-grid">
+            <div class="category">
+                <h2>Análisis de Datos con Python</h2>
+                <a href="python-projects.html" class="btn">Ver proyectos</a>
+            </div>
+            <div class="category">
+                <h2>Ingeniería en Datos</h2>
+                <a href="data-engineering-projects.html" class="btn">Ver proyectos</a>
+            </div>
+            <div class="category">
+                <h2>Procesos de ETL</h2>
+                <a href="etl-projects.html" class="btn">Ver proyectos</a>
+            </div>
+            <div class="category">
+                <h2>SQL</h2>
+                <a href="sql-projects.html" class="btn">Ver proyectos</a>
+            </div>
+            <div class="category">
+                <h2>Dashboards</h2>
+                <a href="dashboards-projects.html" class="btn">Ver proyectos</a>
+            </div>
+            <div class="category">
+                <h2>Business Intelligence</h2>
+                <a href="bi-projects.html" class="btn">Ver proyectos</a>
+            </div>
+        </div>
+    </div>
+    
+    <section class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Puedes contactarme a través de mi LinkedIn:</p>
+                <a href="https://www.linkedin.com/in/rodrigo-oropeza-estrada-627b86150/?trk=public_profile_browsemap" class="btn linkedin" target="_blank">Mi LinkedIn</a>
+            </div>
+            <div class="contact-form-container">
+                <h3>Envíame un mensaje</h3>
+                <form action="#" method="post" class="contact-form">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
+                    
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
+                    
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </div>
-        
-        <div class="contact-info">
-            <h2>Otras formas de contacto</h2>
-            <p>Puedes contactarme a través de:</p>
-            <ul>
-                <li><a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
-                <li><a href="https://www.linkedin.com/in/rodrigo-oropeza-estrada-627b86150/?trk=public_profile_browsemap" target="_blank">LinkedIn</a></li>
-            </ul>
+                    
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
     
